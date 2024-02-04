@@ -15,7 +15,7 @@ public class Paciente {
         return imc;
     }
 
-    void diagnostico(){
+    double diagnostico(){
 
         double imc = calcularIMC(this.peso,this.altura);
 
@@ -27,6 +27,7 @@ public class Paciente {
         else if(imc >= 35 && imc <=39.99)System.out.print("Obesidade grau II\n");
         else if(imc >= 40)System.out.print("Obesidade grau III\n");
 
+        return imc;
     }
 
 }

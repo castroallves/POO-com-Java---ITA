@@ -25,6 +25,12 @@ public class Pizza {
 
     }
 
+    public void zeraIngrediente(){
+
+        this.listaIngredienteUnit = new HashMap<>();
+
+    }
+
     public void contabilizaIngrediente(int qt, String igd){
 
         listaIngredienteTotal.put(igd, qt);
