@@ -1,10 +1,10 @@
 import static org.junit.jupiter.api.Assertions.assertEquals;
-public class Carro extends CarroDeCorrida{
+public class CarroSoma extends CarroDeCorrida{
 
     private int potencia;
 
-    public Carro(String nome, int potencia,int  velocidadeMaxima) {
-        super(velocidadeMaxima, nome);
+    public CarroSoma(String nome, int potencia, int  velocidadeMaxima) {
+        super(nome, velocidadeMaxima);
         this.potencia = potencia;
     }
 
