@@ -8,10 +8,13 @@ public class Principal {
         System.out.println(p.topo());
         System.out.println(p.tamanho());
 
-        p.setTopo(6);
+        Object[] arrayElementos = p.getElementos();
+        arrayElementos[2] = "OUTRO";
 
         System.out.println(p.desempilhar());
         System.out.println(p.topo());
         System.out.println(p.tamanho());
+
+        System.out.println(p.getElementos().length);
     }
 }
